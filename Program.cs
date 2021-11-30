@@ -30,7 +30,7 @@ sayiListesi.RemoveAt(2);
 //renkListesi.Remove("Siyah");
 renkListesi.ForEach(renk=> Console.WriteLine(renk));
 sayiListesi.ForEach(sayi=> Console.WriteLine(sayi));
-Console.WriteLine(renkListesi.BinarySearch("Siyah")); */
+Console.WriteLine(renkListesi.BinarySearch("Siyah")); 
 
 List<Kullanıcılar> Kullancı_Listesi= new List<Kullanıcılar>();
 Kullanıcılar kullanıcı1= new Kullanıcılar();
@@ -63,3 +63,32 @@ public class Kullanıcılar {
     public string Isim { get => isim; set => isim = value; }
     public int Yas { get => yas; set => yas = value; }
 }
+
+ArrayList HackerRank Ödevi.
+int n= Convert.ToInt32(Console.ReadLine());
+int[] intArray=new int[n];
+
+for (int i = 0; i < n; i++)
+{
+    {
+        intArray[i]= Convert.ToInt32(Console.ReadLine());
+    }
+    
+}
+
+
+printArray<Int32>(intArray);
+
+    void printArray<T>(T[] array)
+    {
+     foreach(T i in array)
+     {
+         Console.WriteLine(i);
+     }   
+        
+    }
+*/
+
+
+
+
