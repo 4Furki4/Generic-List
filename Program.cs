@@ -66,7 +66,7 @@ public class Kullanıcılar {
     public int Yas { get => yas; set => yas = value; }
 }
 //string[] kediler= {"British","Tekir"};
-*/
+
 ArrayList Liste = new ArrayList();
 Liste.Add("Furkan");
 Liste.Add(4);
@@ -86,5 +86,22 @@ foreach (var item in Liste)
     Console.WriteLine(item);
 }
 //Console.WriteLine(Liste.BinarySearch(90));
+*/
 
-
+Dictionary<int,string> kullanıcılar = new Dictionary<int, string>();
+kullanıcılar.Add(4,"Furkan Cengiz");
+kullanıcılar.Add(31,"Kadir Karakol");
+kullanıcılar.Add(23, "Jim Carrey");
+Console.WriteLine(kullanıcılar[4]);
+foreach (var item in kullanıcılar)
+{
+    Console.WriteLine(item);
+}
+foreach (var item in kullanıcılar.Keys)
+{
+    Console.WriteLine(item);
+}
+foreach (var item in kullanıcılar.Values)
+{
+    Console.WriteLine(item);
+}
