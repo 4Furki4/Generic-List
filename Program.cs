@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 // See https://aka.ms/new-console-template for more information
 /*List<int> sayiListesi= new List<int>();
 Random rastgele=new Random();
@@ -32,7 +33,8 @@ renkListesi.ForEach(renk=> Console.WriteLine(renk));
 sayiListesi.ForEach(sayi=> Console.WriteLine(sayi));
 Console.WriteLine(renkListesi.BinarySearch("Siyah")); */
 
-List<Kullanıcılar> Kullancı_Listesi= new List<Kullanıcılar>();
+
+/* List<Kullanıcılar> Kullancı_Listesi= new List<Kullanıcılar>();
 Kullanıcılar kullanıcı1= new Kullanıcılar();
 Kullanıcılar kullanıcı2= new Kullanıcılar();
 Kullanıcılar kullanıcı3= new Kullanıcılar();
@@ -63,3 +65,26 @@ public class Kullanıcılar {
     public string Isim { get => isim; set => isim = value; }
     public int Yas { get => yas; set => yas = value; }
 }
+//string[] kediler= {"British","Tekir"};
+*/
+ArrayList Liste = new ArrayList();
+Liste.Add("Furkan");
+Liste.Add(4);
+Liste.Add(true);
+Liste.Add("F");
+foreach (var item in Liste)
+{
+    Console.WriteLine(item);
+}
+
+String[] Countries = {"Canada", "USA", "UK", "Turkey","Belgium"};
+int[] Populations_M = {38, 329, 67, 90, 12};
+Liste.AddRange(Countries);
+Liste.AddRange(Populations_M);
+foreach (var item in Liste)
+{
+    Console.WriteLine(item);
+}
+//Console.WriteLine(Liste.BinarySearch(90));
+
+
